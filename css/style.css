@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.buttonContainer {
+  min-height: calc(100vh - 4vh);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: verdana;
+  margin-bottom: 2vh;
+}
+
+button {
+  flex: 0 0 33%;
+  padding: 10px 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+button:focus {
+  outline: none;
+}
+
+#startButton {
+  background-color: green;
+}
+
+#stopButton {
+  background-color: red;
+}
